@@ -40,7 +40,13 @@
 		<div id="gradient-overlay"></div>
     </div>
 	
+<?php if(isset($this->fields->headcover)) { ?>
+<header id="header" style="background-image:url('<?php echo $this->fields->headcover; ?>')">
+<?php } else if($this->is('post') && isset($this->fields->cover)) { ?>
+<header id="header" style="background-image:url('<?php echo $this->fields->cover; ?>')">
+<?php } else { ?>
 <header id="header" class="clearfix">
+<?php } ?>
 
     <div class="container">
         <div class="row">
