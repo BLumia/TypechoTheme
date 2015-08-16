@@ -1,0 +1,356 @@
+body {
+	margin: 0 auto;
+	font-family: "Roboto", "Microsoft Yahei", SimHei, "Microsoft JhengHei", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Arial Unicode MS", Apple LiGothic Medium, sans-serif;
+	font-size:87.5%;
+	line-height: 1.5em;
+	color: #545454;
+	background-color: #ffffff;
+}
+
+.row {
+	padding: 20px 0px 0px;
+}
+
+/* 页头 */
+
+.site-name {
+	padding-top: 9em;
+}
+
+#logo {
+	font-size: 50px;
+	color: #FFFFFF;
+}
+
+header#header{
+	/*background-color: #4285F4;*/
+	background-size: cover;
+	background-position: center center;
+	border-bottom:1px dashed #3F76F8;
+}
+
+.description {
+	margin:.5em 0 0;
+	color:#FFF;
+	padding-bottom: 20px;
+}
+
+.site-search {
+	padding-top: 8em;
+	opacity: 0.5;
+}
+
+.site-search:hover {
+	opacity: 0.9;
+}
+
+#nav-menu {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	margin: 20px 0px 0px;
+}
+
+#nav-menu li {
+	display: inline;
+	list-style: none;
+	color: #FFF;
+	padding: 19px 12px 22px;
+	transition: border-bottom-color 0.5s;
+}
+
+#nav-menu li:hover {
+	border-bottom:2px solid transparent;
+	border-bottom-color:rgba(255,255,255,0.35);
+	transition: border-bottom-color 0.5s;
+}
+
+#nav-menu .current {
+	border-bottom:2px solid transparent;
+	border-bottom-color:rgb(255,255,255);
+}
+
+#nav-menu li a {
+	color: #FFF;
+}
+
+#nav-menu li ul {
+	position: absolute;
+	padding-top: 30px;
+	padding-left: 10px;
+	visibility: hidden;
+}
+
+#nav-menu li:hover ul {
+	visibility: visible;
+}
+
+/* 主题标题的效果 */
+
+.post{
+	position: relative;
+	padding:15px 20px;
+	margin-bottom:15px;
+	background:#fff;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.25);
+	box-shadow:0 2px 4px rgba(0,0,0,0.25)
+}
+
+.post:hover{
+	-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.45);
+	box-shadow:0 2px 4px rgba(0,0,0,0.45);
+	-moz-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+
+.post-title{
+	margin:.2em 0 .5em;
+	font-size:1.4em;
+	font-family:Michroma,'Segoe UI Light','Segoe UI','Segoe UI WP','Microsoft Jhenghei','微软雅黑',sans-serif,Times
+}
+
+.post-title a{
+	color:#15C9F9;
+	position:relative
+}
+
+.post-title a:after{
+	content:"";
+	position:absolute;
+	border-bottom:2px solid #03A9F4;
+	bottom:-3px;
+	left:100%;
+	width:0;
+	-webkit-transition:width 350ms,left 350ms;
+	-moz-transition:width 350ms,left 350ms;
+	transition:width 350ms,left 350ms
+}
+
+.post-title a:hover{
+	color:#03A9F4;
+	text-decoration:none
+}
+
+.post-title a:hover:after{
+	left:0;
+	width:100%;
+	-webkit-transition:width 350ms;
+	-moz-transition:width 350ms;
+	transition:width 350ms
+}
+
+/* post和widget的a标签相关 */
+
+.post-meta a,.post-content a,.widget a,.comment-content a{
+	color:#03A9F4;
+}
+
+.post-meta a:hover,.post-content a:hover,.widget a:hover,.comment-content a:hover{
+	color:#0285D4;
+}
+
+/* 评论 */
+.comments-fix {
+	margin: 0px -20px;
+}
+
+.comment-list li {
+	padding: 5px 0px 0px 30px;
+	margin-top:10px;
+	border-top: 2px dashed #EAEAEA;
+}
+
+.comment-author .avatar{
+	background: rgba(0, 39, 59, 0.2) none repeat scroll 0% 0%;
+	float:left;
+	margin-right:10px;
+	border-radius: 3px;
+	width: 48px;
+	height: 48px;
+}
+
+.comment-author cite{
+	font-weight:bold;font-style:normal;
+}
+
+/* 侧边栏 */
+
+.widget{
+	padding:15px 20px;
+	margin-bottom:15px;
+	margin-left:15px;
+	background:#fff;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.25);
+	box-shadow:0 2px 4px rgba(0,0,0,0.25)
+}
+
+.widget-title {
+	margin: 5px 0px;
+}
+
+/* 我也不知道这个怎么分类 */
+
+.archive-title{
+	margin: 0em 0em 1em;
+	padding: 15px 20px 15px;
+	color:#FFF;
+	background-color: #3567D6;
+	font-size:20;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.25);
+	box-shadow:0 2px 4px rgba(0,0,0,0.25)
+}
+
+.page-navigator, #footer {
+	background-color: rgba(0,0,0,0.4);
+}
+
+/* 无用的BL附赠品 */
+
+.bg-darkblue {
+	background-color: #3567D6;
+}
+
+.seija:hover, .seija-rev {
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+	transition: transform 1.5s;
+}
+
+.seija, .seija-rev:hover {
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	transition: transform 1.5s;
+}
+
+/* Material Design 组件 */
+
+.card{
+	position: relative;
+	padding:15px 20px 45px;
+	margin-bottom:15px;
+	background:#fff;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.25);
+	box-shadow:0 2px 4px rgba(0,0,0,0.25)
+}
+
+.card:hover{
+	-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.45);
+	box-shadow:0 2px 4px rgba(0,0,0,0.45);
+	-moz-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+
+.card-cover{
+	height: 10em;
+	margin: 0px -20px 20px; 
+	overflow: hidden;
+	background-color: #4285F4;
+	background-size: cover;
+	background-position: center center;
+}
+
+.card-cover img {
+	/*还是在cover设置background吧，img自定义效果不佳*/
+	position: cover;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.more, .card-action {
+	border-top: 1px solid rgba(160, 160, 160, 0.2);
+	position: absolute;
+	padding-top: 15px;
+	padding-left:20px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.more a, .card-action a{
+	font-size: 15px;
+	color: #15C9F9;
+	margin-right: 20px;
+	-webkit-transition: color .3s ease;
+	-moz-transition: color .3s ease;
+	-o-transition: color .3s ease;
+	-ms-transition: color .3s ease;
+	transition: color .3s ease;
+	text-transform: uppercase;
+}
+
+/* triangles */
+.triangles{
+	width:100%;
+	height:720px;
+	position:absolute
+}
+
+@-webkit-keyframes triangles-scroll{
+	0%{
+		-webkit-transform:translateY(0);
+		transform:translateY(0)
+	}
+
+	100%{
+		-webkit-transform:translateY(-360px);
+		transform:translateY(-360px)
+	}
+
+}
+
+@keyframes triangles-scroll{
+	0%{
+		-webkit-transform:translateY(0);
+		transform:translateY(0)
+	}
+
+	100%{
+		-webkit-transform:translateY(-360px);
+		transform:translateY(-360px)
+	}
+
+}
+
+#triangles-1{
+	background-image:url(./img/triangles-1.png);
+	-webkit-animation:triangles-scroll 10s infinite linear;
+	animation:triangles-scroll 10s infinite linear
+}
+
+#triangles-2{
+	background-image:url(./img/triangles-2.png);
+	-webkit-animation:triangles-scroll 15s infinite linear;
+	animation:triangles-scroll 15s infinite linear
+}
+
+#triangles-3{
+	background-image:url(./img/triangles-3.png);
+	-webkit-animation:triangles-scroll 20s infinite linear;
+	animation:triangles-scroll 20s infinite linear
+}
+
+#gradient-overlay{
+	width:100%;
+	height:100%;
+	position:absolute;
+	transition:all 1s ease-in-out;
+	background:linear-gradient(rgba(17, 157, 187, 0.9) 0px, #4020E0 75%, #1059B9 100%) repeat scroll 0% 0%;
+}
+
+.header-background{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:fixed;
+	z-index:-1;
+	background-color:#b17
+}
