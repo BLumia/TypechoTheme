@@ -30,6 +30,6 @@
 
 ![Material Design Theme](https://raw.githubusercontent.com/BLumia/TypechoTheme/master/material/screenshot.png)
 
-1. header.php line70~83 由于我使用了独立的页面作为首页并且希望分类以下级目录的形式显示，所以当前代码如此。如果您只需要以分类作为最上层导航，请适当修改该部分代码以便为你所用。
+1. header.php line65~71  由于我使用了独立的页面作为首页并且希望分类以下级目录的形式显示，所以当前代码如此。如果您只需要以分类作为最上层导航，请适当修改该部分代码以便为你所用。
 2. 发表文章时添加cover字段以便在列表中指定预览图。
 3. 发表文章时添加headCover字段以便在文章页面指定页头图。
